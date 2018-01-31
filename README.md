@@ -18,7 +18,7 @@ Open Source Ethereum Smart Contract Dapp that allows 2 transacting parties, a bu
     * [Escrow](https://github.com/scanpayasia/scanpayasia.github.io#escrow-agent)
 
 * [How the smart contract works](https://github.com/scanpayasia/scanpayasia.github.io#how-the-smart-contract-works)
-* [Why Escrow Scan Pay was created](https://github.com/scanpayasia/scanpayasia.github.io#why-escrowmyether-was-created)
+* [Why Escrow Scan Pay was created](https://github.com/scanpayasia/scanpayasia.github.io#why-escrow-scan-pay-was-created)
 
 
 ## Getting Started
