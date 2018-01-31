@@ -1,28 +1,24 @@
-# EscrowMyEther
-Open Source Ethereum Smart Contract Dapp that allows 2 transacting parties, a buyer and seller, to trade with their choice of escrow agent. Website: http://escrowmyether.com/
+# Escrow Scan Pay
+Open Source Ethereum Smart Contract Dapp that allows 2 transacting parties, a buyer and seller, to trade with their choice of escrow agent.
 
 
 ## Table of contents
-* [Getting Started](https://github.com/KayinCheung/KayinCheung.github.io#getting-started)
-    * [Using the Dapp dashboard](https://github.com/KayinCheung/KayinCheung.github.io#using-the-dashboard)
-    * [Select address](https://github.com/KayinCheung/KayinCheung.github.io#select-address)
-    * [Withdrawing contract balance](https://github.com/KayinCheung/KayinCheung.github.io#withdrawing-contract-balance)
+* [Getting Started](https://github.com/scanpayasia/scanpayasia.github.io#getting-started)
+    * [Using the Dapp dashboard](https://github.com/scanpayasia/scanpayasia.github.io#using-the-dashboard)
+    * [Select address](https://github.com/scanpayasia/scanpayasia.github.io#select-address)
+    * [Withdrawing contract balance](https://github.com/scanpayasia/scanpayasia.github.io#withdrawing-contract-balance)
 
-* [Initiating new escrow transaction](https://github.com/KayinCheung/KayinCheung.github.io#initiating-new-escrow-transaction)
-    * [Finding an escrow agent](https://github.com/KayinCheung/KayinCheung.github.io#1-finding-an-escrow-agent)
-    * [Prepare transaction info](https://github.com/KayinCheung/KayinCheung.github.io#2-prepare-transaction-info)
+* [Initiating new escrow transaction](https://github.com/scanpayasia/scanpayasia.github.io#initiating-new-escrow-transaction)
+    * [Finding an escrow agent](https://github.com/scanpayasia/scanpayasia.github.io#1-finding-an-escrow-agent)
+    * [Prepare transaction info](https://github.com/scanpayasia/scanpayasia.github.io#2-prepare-transaction-info)
     
-* [Interact with existing transaction](https://github.com/KayinCheung/KayinCheung.github.io#3-interact-with-existing-transaction)
-    * [Buyer](https://github.com/KayinCheung/KayinCheung.github.io#buyers)
-    * [Seller](https://github.com/KayinCheung/KayinCheung.github.io#sellers)
-    * [Escrow](https://github.com/KayinCheung/KayinCheung.github.io#escrow-agent)
-    
-* [Update profile information](https://github.com/KayinCheung/KayinCheung.github.io#update-profile-information)
-* [How the smart contract works](https://github.com/KayinCheung/KayinCheung.github.io#how-the-smart-contract-works)
-* [Integrate EscrowMyEther in your site](https://github.com/KayinCheung/KayinCheung.github.io#integration)
-* [Changelog](https://github.com/KayinCheung/KayinCheung.github.io#smart-contract-changelog)
-* [Known Issues](https://github.com/KayinCheung/KayinCheung.github.io#known-issues)
-* [Author](https://github.com/KayinCheung/KayinCheung.github.io#authors)
+* [Interact with existing transaction](https://github.com/scanpayasia/scanpayasia.github.io#3-interact-with-existing-transaction)
+    * [Buyer](https://github.com/scanpayasia/scanpayasia.github.io#buyers)
+    * [Seller](https://github.com/scanpayasia/scanpayasia.github.io#sellers)
+    * [Escrow](https://github.com/scanpayasia/scanpayasia.github.io#escrow-agent)
+
+* [How the smart contract works](https://github.com/scanpayasia/scanpayasia.github.io#how-the-smart-contract-works)
+* [Why Escrow Scan Pay was created](https://github.com/scanpayasia/scanpayasia.github.io#why-escrowmyether-was-created)
 
 
 ## Getting Started
@@ -109,15 +105,6 @@ When escrow escalation is activated, escrow agents can refund the buyer, or rele
 
 ![interact with transaction](https://user-images.githubusercontent.com/24837709/31041943-3ef37698-a5d0-11e7-87bc-f15ca9d95e04.jpg)
 
-## Update profile information
-A section to associate a name and information to an ethereum address. Escrow agents also set their fee percentage here, otherwise it default to zero. 
-
-Seller and escrow profile names are shown as buyers create new transactions. When the buyer enters seller address, the seller profile name is displayed in green. Same with escrow address and escrow name.
-![modify_profile](https://user-images.githubusercontent.com/24837709/30523431-b56e1bbe-9c13-11e7-9231-6df8e6a742ee.jpg)
-If profile name isn't set for the input address, a warning message, "Unregistered Seller" or "Unregistered Escrow" appears in orange.
-
-Buyers can still create new transaction with unregistered sellers and escrows, but please double check with the seller or escrow agent, in case they provided the wrong address. 
-
 
 ## How the smart contract works
 
@@ -135,37 +122,8 @@ Whenever funds are released to seller, or funds are refunded to buyer, the trans
 
 When funds are transferred to an address's ownership, they are stored in a Funds bank. It's displayed as Contract balance on the Dapp dashboard. These funds can be withdrawn at anytime to the owner's address for spending.
 
-## Integration
 
-Please refer to https://github.com/escrowmyetherbd/escrowmyetherbd.github.io. It's a repository for developers to customize and integrate EscrowMyEther's in other sites. For example if you run a real estate site, you can hard code your address as the escrow agent, and escrow for all transactions on your site.
-
-
-## Smart Contract Changelog
-
-* v1.2 Mainnet - 28 September 2017
-    * Mainnet deployment: 
-	  - Escrow Contract: https://etherscan.io/address/0x1c02ce498dc6d0d6ef05a253e021258b07eeba91
-	  - Entity Name Storage Contract: https://etherscan.io/address/0xcf356ab67132c1359ebdd0ccc928fdb020eaa929  
-	  
-
-* v1.2 Beta - 18 September 2017
-    * EscrowMyEther Contract: 
-	  - Updated WithdrawFunds function to eliminate chance of re-entrancy attacks.
-	  - Fixed critical contract draining bug in escrowDecision.  
-	  - No longer fixed to returning 10 transaction history per call. Number can be specified now.	  
-	  - Contract Deployed on Ropsten testnet at https://ropsten.etherscan.io/address/0xabd94b3ce2b270d89341d31a1a708b8004436354
-
-* v1.1 Beta - 10 September 2017
-    * EscrowMyEther Contract: 
-	  - BuyerFundRelease function now requires refund_approval to be false.
-	  - Recompiled with Solidity v0.4.16+commit.d7661dd9
-	  - Contract Deployed on Ropsten testnet at https://ropsten.etherscan.io/address/0xe509a834bf9ee3c27af895609e5cdd2f455c4854
-	  
-* v1.0	Beta - 9 September 2017 
-    * Initial commit
-    
-    
-## Why EscrowMyEther was created
+## Why Escrow Scan Pay was created
 
 Transactions over the internet are mostly governed by financial institutions like PayPal and Credit Card companies. With the high lifetime value of Credit Card holders and the lack of alternatives for merchants, financial institutions are inherently biased towards customers when dispute arises.
 
@@ -176,17 +134,3 @@ These added costs cause a taxation effect, increasing prices for honest customer
 What’s needed is a transaction method that offer the benefits of cryptocurrency payments, yet has a built in escrow mechanism with fair dispute resolution. 
 
 By creating EscrowMyEther, online transaction methods with escrow protection are not limited to Paypal or financial institutions. Anyone can be the "Paypal" for their community, charge a fee and offer their escrow services. By introducing free market competition, we hope it drives escrow fees down and service levels up, benefiting anyone who transacts online.
-
-
-## Known Issues 
-
-* Exponential numbers (eg 1e5) are incorrectly considered valid inputs in "Amount to Send [ETH]" input field on new transactions page.
-
-* Refreshing website re-direct users to homepage and occassionally shows "Ethereum Node not connected" despite being connected. 
-
-
-## Authors
-
-Cheung Ka Yin 
-
-Contact: EscrowMyEther at gmail dot com
