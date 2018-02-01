@@ -17414,7 +17414,7 @@
                     }, "Escrow Agent")), l.default.createElement("li", {
                         className: "main-li"
                     }, l.default.createElement("a", {
-                        href: "#readme"
+                        href: "https://scanpayasia.github.io/#readme"
                     }, "Get Started"))))), l.default.createElement("div", null, l.default.createElement("div", {
                         className: "navigation"
                     }, l.default.createElement("div", {
