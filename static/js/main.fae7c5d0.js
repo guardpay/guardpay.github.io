@@ -12911,14 +12911,6 @@
                             className: "center"
                         }, "Enter Dapp Dashboard"), l.default.createElement("br", null), t, e, l.default.createElement("br", null), l.default.createElement("div", {
                             id: "readme"
-                        }), l.default.createElement("p", {
-                            className: "center"
-                        }, "Video guide to using dashboard", l.default.createElement("br", null), l.default.createElement("iframe", {
-                            width: "560",
-                            height: "315",
-                            src: "https://www.youtube.com/embed/T2_XzSlddWI?rel=0",
-                            frameborder: "0",
-                            allowfullscreen: !0
                         })))))
                     }
                 }]), t
