@@ -12919,36 +12919,7 @@
                             src: "https://www.youtube.com/embed/T2_XzSlddWI?rel=0",
                             frameborder: "0",
                             allowfullscreen: !0
-                        }), l.default.createElement("br", null), l.default.createElement("br", null)))), l.default.createElement("div", {
-                            className: "white-bg2"
-                        }, l.default.createElement("div", {
-                            className: "narrow-body-container"
-                        }, l.default.createElement("br", null), l.default.createElement("br", null), l.default.createElement("h2", {
-                            className: "center"
-                        }, "For Developers"), l.default.createElement("br", null), l.default.createElement("p", {
-                            className: "center"
-                        }, "Links to the open source contract code, bug bounty program and github."), l.default.createElement("br", null), l.default.createElement("table", {
-                            className: "home"
-                        }, l.default.createElement("tr", null, l.default.createElement("td", null, l.default.createElement("a", {
-                            href: "https://etherscan.io/address/0x1c02ce498dc6d0d6ef05a253e021258b07eeba91",
-                            target: "_blank"
-                        }, l.default.createElement("button", {
-                            className: "HomeButton"
-                        }, "Contract Source Code"))), l.default.createElement("td", null), l.default.createElement("td", null, l.default.createElement("a", {
-                            href: "https://github.com/KayinCheung/KayinCheung.github.io",
-                            target: "_blank"
-                        }, l.default.createElement("button", {
-                            className: "HomeButton"
-                        }, "Github Repository"))), l.default.createElement("td", null), l.default.createElement("td", null, l.default.createElement("a", {
-                            href: "https://www.reddit.com/r/ethdev/comments/6zwb1x/escrowmyether_1_eth_bug_bounty/",
-                            target: "_blank"
-                        }, l.default.createElement("button", {
-                            className: "HomeButton"
-                        }, "Bug Bounty"))))))), l.default.createElement("div", {
-                            className: "bg-lb"
-                        }, l.default.createElement("div", {
-                            className: "narrow-body-container"
-                        }, l.default.createElement("br", null)))))
+                        }), l.default.createElement("br", null)))))
                     }
                 }]), t
             }(u.Component));
