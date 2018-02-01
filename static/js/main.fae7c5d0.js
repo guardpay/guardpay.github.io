@@ -17387,7 +17387,7 @@
                     }, "Escrow Agent")), l.default.createElement("li", {
                         className: "main-li"
                     }, l.default.createElement("a", {
-                        href: "https://scanpayasia.github.io/#readme"
+                        href: "#readme"
                     }, "Get Started"))))) : (e = l.default.createElement("div", {
                         className: "info-bar-green"
                     }, l.default.createElement("p", {
@@ -17414,7 +17414,7 @@
                     }, "Escrow Agent")), l.default.createElement("li", {
                         className: "main-li"
                     }, l.default.createElement("a", {
-                        href: "https://scanpayasia.github.io/#readme"
+                        href: "#readme"
                     }, "Get Started"))))), l.default.createElement("div", null, l.default.createElement("div", {
                         className: "navigation"
                     }, l.default.createElement("div", {
