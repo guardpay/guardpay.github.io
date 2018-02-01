@@ -12948,11 +12948,7 @@
                             className: "bg-lb"
                         }, l.default.createElement("div", {
                             className: "narrow-body-container"
-                        }, l.default.createElement("br", null), l.default.createElement("br", null), l.default.createElement("h2", {
-                            className: "center"
-                        }, "Contact"), l.default.createElement("br", null), l.default.createElement("p", {
-                            className: "center"
-                        }, "hi@scanpay.asia"), l.default.createElement("br", null)))))
+                        }, l.default.createElement("br", null)))))
                     }
                 }]), t
             }(u.Component));
